@@ -4,7 +4,9 @@
   "description": "Electron starter app",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build-this": "electron-packager .",
+    "build": "electron-packager --all ."
   },
   "keywords": [
     "starterkit",
@@ -14,6 +16,7 @@
   "author": "Sneaky Alec",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^3.0.6"
+    "electron": "^3.0.6",
+    "electron-packager": "^12.2.0"
   }
 }

@@ -6,10 +6,13 @@ let win
 
 function createWindow () {
     // Creaza o fereastra de browser
-    win = new BrowserWindow({ width:800, height:600 })
+    win = new BrowserWindow({ width:800, height:600, show:false })
 
     // Incarca fisierul in fereastra de browser
     win.loadFile("index.html")
+
+    // Afiseaza fereastra dupa ce aceasta a fost incarcata complet
+    win.webContents.on("did-finish-load", function() { win.show() } )
 
     // Deschide kitul pentru dezvoltatori
     win.webContents.openDevTools()
