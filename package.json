@@ -1,0 +1,19 @@
+{
+  "name": "electron-starter",
+  "version": "1.0.0",
+  "description": "Electron starter app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "starterkit",
+    "electron",
+    "firstapp"
+  ],
+  "author": "Sneaky Alec",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^3.0.6"
+  }
+}
